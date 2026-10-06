@@ -5,6 +5,7 @@ An [Agent Skill](https://agentskills.io) that works as a study partner for **mus
 - **Theory and analysis**: harmony, Roman numerals and figured bass, voice leading, counterpoint, form. It checks part-writing against a full checklist and reports each problem by bar, beat, and voice.
 - **Staff notation**: examples are written in [ABC notation](https://abcnotation.com) and drawn with [abcjs](https://github.com/paulrosen/abcjs): grand staff, SATB on two staves, Roman numerals, figured bass, fingering, dynamics, and a Play button.
 - **Practice**: quizzes one question at a time, ear training with hidden answers, and returning to the topics you missed.
+- **Reading your scores**: MusicXML files (`.musicxml`, `.mxl`) are read exactly, with a standard-library script. PDFs and photos are cut into enlarged crops, read visually, and transcribed for you to confirm. See [the score-reading test](docs/score-reading-test.md) for how accurate that is.
 - **Pedagogy**: method comparisons, learning theory, lesson plans, practice strategies, repertoire levels, and help with graduate written work. It never invents citations.
 
 ![Example: a four-part chorale in B♭ with Roman numerals, and figured bass](assets/example.png)
@@ -51,7 +52,11 @@ In claude.ai, examples appear as an artifact with the staves and a Play button. 
   - `references/pedagogy.md`: piano pedagogy methods, learning theory, lesson planning, practice, and leveling.
   - `references/sources.md`: vetted real references (open textbooks, notation guides, pedagogy, scores), so the skill never invents citations.
   - `assets/score.html`: the page template that draws and plays the examples.
+  - `scripts/read_musicxml.py`: prints the notes of a MusicXML score as text (standard library only).
+  - `scripts/zoom.py`: cuts a score photo or page into enlarged crops for reading (Pillow).
+  - `references/score-input.md`: how to read scores the student sends (MusicXML, PDF, photo), including the transcription procedure.
 - `.claude-plugin/`: the Claude Code plugin and marketplace manifests.
+- `docs/score-reading-test.md` and `evals/score-reading/`: the blind test of reading notation from images, with its scripts, images, answer key, and results.
 - `docs/claude-ai.md`: a step-by-step guide to using the skill in claude.ai.
 - `.github/workflows/release.yml`: builds `music-theory.zip` and attaches it to each GitHub release.
 - `PRIVACY.md`: privacy policy.

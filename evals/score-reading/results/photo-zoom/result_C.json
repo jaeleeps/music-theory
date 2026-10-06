@@ -1,0 +1,1002 @@
+{
+ "clefs": [
+  "treble",
+  "bass"
+ ],
+ "key": "3 flats",
+ "time": "3/4",
+ "notes": [
+  {
+   "measure": 1,
+   "staff": 1,
+   "onset": "1/2",
+   "pitch": "G4",
+   "dur": "1/4",
+   "uncertain": false
+  },
+  {
+   "measure": 1,
+   "staff": 1,
+   "onset": "1/2",
+   "pitch": "Bb4",
+   "dur": "1/4",
+   "uncertain": false
+  },
+  {
+   "measure": 1,
+   "staff": 1,
+   "onset": "3/4",
+   "pitch": "G4",
+   "dur": "1/4",
+   "uncertain": false
+  },
+  {
+   "measure": 1,
+   "staff": 1,
+   "onset": "3/4",
+   "pitch": "Bb4",
+   "dur": "1/4",
+   "uncertain": false
+  },
+  {
+   "measure": 1,
+   "staff": 1,
+   "onset": "1",
+   "pitch": "G4",
+   "dur": "1/2",
+   "uncertain": false
+  },
+  {
+   "measure": 1,
+   "staff": 1,
+   "onset": "1",
+   "pitch": "Bb4",
+   "dur": "1/2",
+   "uncertain": false
+  },
+  {
+   "measure": 1,
+   "staff": 2,
+   "onset": "0",
+   "pitch": "Eb3",
+   "dur": "1/2",
+   "uncertain": false
+  },
+  {
+   "measure": 1,
+   "staff": 2,
+   "onset": "0",
+   "pitch": "Eb4",
+   "dur": "1/2",
+   "uncertain": false
+  },
+  {
+   "measure": 1,
+   "staff": 2,
+   "onset": "1/2",
+   "pitch": "Bb2",
+   "dur": "1/2",
+   "uncertain": false
+  },
+  {
+   "measure": 1,
+   "staff": 2,
+   "onset": "1/2",
+   "pitch": "Bb3",
+   "dur": "1/2",
+   "uncertain": false
+  },
+  {
+   "measure": 1,
+   "staff": 2,
+   "onset": "1",
+   "pitch": "Eb3",
+   "dur": "1/2",
+   "uncertain": false
+  },
+  {
+   "measure": 1,
+   "staff": 2,
+   "onset": "1",
+   "pitch": "Eb4",
+   "dur": "1/2",
+   "uncertain": false
+  },
+  {
+   "measure": 1,
+   "staff": 2,
+   "onset": "3/2",
+   "pitch": "Bb2",
+   "dur": "1/2",
+   "uncertain": false
+  },
+  {
+   "measure": 1,
+   "staff": 2,
+   "onset": "3/2",
+   "pitch": "Bb3",
+   "dur": "1/2",
+   "uncertain": false
+  },
+  {
+   "measure": 1,
+   "staff": 2,
+   "onset": "2",
+   "pitch": "Eb3",
+   "dur": "1/2",
+   "uncertain": false
+  },
+  {
+   "measure": 1,
+   "staff": 2,
+   "onset": "2",
+   "pitch": "Eb4",
+   "dur": "1/2",
+   "uncertain": false
+  },
+  {
+   "measure": 1,
+   "staff": 2,
+   "onset": "5/2",
+   "pitch": "Bb2",
+   "dur": "1/2",
+   "uncertain": false
+  },
+  {
+   "measure": 1,
+   "staff": 2,
+   "onset": "5/2",
+   "pitch": "Bb3",
+   "dur": "1/2",
+   "uncertain": false
+  },
+  {
+   "measure": 2,
+   "staff": 1,
+   "onset": "0",
+   "pitch": "G5",
+   "dur": "1",
+   "uncertain": false
+  },
+  {
+   "measure": 2,
+   "staff": 1,
+   "onset": "1",
+   "pitch": "F5",
+   "dur": "1/2",
+   "uncertain": false
+  },
+  {
+   "measure": 2,
+   "staff": 1,
+   "onset": "0",
+   "pitch": "Ab4",
+   "dur": "3/2",
+   "uncertain": false
+  },
+  {
+   "measure": 2,
+   "staff": 2,
+   "onset": "0",
+   "pitch": "D3",
+   "dur": "1/2",
+   "uncertain": false
+  },
+  {
+   "measure": 2,
+   "staff": 2,
+   "onset": "0",
+   "pitch": "D4",
+   "dur": "1/2",
+   "uncertain": false
+  },
+  {
+   "measure": 2,
+   "staff": 2,
+   "onset": "1/2",
+   "pitch": "Bb2",
+   "dur": "1/2",
+   "uncertain": false
+  },
+  {
+   "measure": 2,
+   "staff": 2,
+   "onset": "1/2",
+   "pitch": "Bb3",
+   "dur": "1/2",
+   "uncertain": false
+  },
+  {
+   "measure": 2,
+   "staff": 2,
+   "onset": "1",
+   "pitch": "D3",
+   "dur": "1/2",
+   "uncertain": false
+  },
+  {
+   "measure": 2,
+   "staff": 2,
+   "onset": "1",
+   "pitch": "D4",
+   "dur": "1/2",
+   "uncertain": false
+  },
+  {
+   "measure": 2,
+   "staff": 2,
+   "onset": "3/2",
+   "pitch": "Bb2",
+   "dur": "1/2",
+   "uncertain": false
+  },
+  {
+   "measure": 2,
+   "staff": 2,
+   "onset": "3/2",
+   "pitch": "Bb3",
+   "dur": "1/2",
+   "uncertain": false
+  },
+  {
+   "measure": 2,
+   "staff": 2,
+   "onset": "2",
+   "pitch": "D3",
+   "dur": "1/2",
+   "uncertain": false
+  },
+  {
+   "measure": 2,
+   "staff": 2,
+   "onset": "2",
+   "pitch": "D4",
+   "dur": "1/2",
+   "uncertain": false
+  },
+  {
+   "measure": 2,
+   "staff": 2,
+   "onset": "5/2",
+   "pitch": "Bb2",
+   "dur": "1/2",
+   "uncertain": false
+  },
+  {
+   "measure": 2,
+   "staff": 2,
+   "onset": "5/2",
+   "pitch": "Bb3",
+   "dur": "1/2",
+   "uncertain": false
+  },
+  {
+   "measure": 3,
+   "staff": 1,
+   "onset": "1/2",
+   "pitch": "G4",
+   "dur": "1/4",
+   "uncertain": false
+  },
+  {
+   "measure": 3,
+   "staff": 1,
+   "onset": "1/2",
+   "pitch": "Eb5",
+   "dur": "1/4",
+   "uncertain": false
+  },
+  {
+   "measure": 3,
+   "staff": 1,
+   "onset": "3/4",
+   "pitch": "G4",
+   "dur": "1/4",
+   "uncertain": false
+  },
+  {
+   "measure": 3,
+   "staff": 1,
+   "onset": "3/4",
+   "pitch": "Eb5",
+   "dur": "1/4",
+   "uncertain": false
+  },
+  {
+   "measure": 3,
+   "staff": 1,
+   "onset": "1",
+   "pitch": "G4",
+   "dur": "1/2",
+   "uncertain": false
+  },
+  {
+   "measure": 3,
+   "staff": 1,
+   "onset": "1",
+   "pitch": "Eb5",
+   "dur": "1/2",
+   "uncertain": false
+  },
+  {
+   "measure": 3,
+   "staff": 2,
+   "onset": "0",
+   "pitch": "Db3",
+   "dur": "1/2",
+   "uncertain": false
+  },
+  {
+   "measure": 3,
+   "staff": 2,
+   "onset": "0",
+   "pitch": "Db4",
+   "dur": "1/2",
+   "uncertain": false
+  },
+  {
+   "measure": 3,
+   "staff": 2,
+   "onset": "1/2",
+   "pitch": "Eb3",
+   "dur": "1/2",
+   "uncertain": false
+  },
+  {
+   "measure": 3,
+   "staff": 2,
+   "onset": "1/2",
+   "pitch": "Eb4",
+   "dur": "1/2",
+   "uncertain": false
+  },
+  {
+   "measure": 3,
+   "staff": 2,
+   "onset": "1",
+   "pitch": "Db3",
+   "dur": "1/2",
+   "uncertain": false
+  },
+  {
+   "measure": 3,
+   "staff": 2,
+   "onset": "1",
+   "pitch": "Db4",
+   "dur": "1/2",
+   "uncertain": false
+  },
+  {
+   "measure": 3,
+   "staff": 2,
+   "onset": "3/2",
+   "pitch": "Eb3",
+   "dur": "1/2",
+   "uncertain": false
+  },
+  {
+   "measure": 3,
+   "staff": 2,
+   "onset": "3/2",
+   "pitch": "Eb4",
+   "dur": "1/2",
+   "uncertain": false
+  },
+  {
+   "measure": 3,
+   "staff": 2,
+   "onset": "2",
+   "pitch": "Db3",
+   "dur": "1/2",
+   "uncertain": false
+  },
+  {
+   "measure": 3,
+   "staff": 2,
+   "onset": "2",
+   "pitch": "Db4",
+   "dur": "1/2",
+   "uncertain": false
+  },
+  {
+   "measure": 3,
+   "staff": 2,
+   "onset": "5/2",
+   "pitch": "Eb3",
+   "dur": "1/2",
+   "uncertain": false
+  },
+  {
+   "measure": 3,
+   "staff": 2,
+   "onset": "5/2",
+   "pitch": "Eb4",
+   "dur": "1/2",
+   "uncertain": false
+  },
+  {
+   "measure": 4,
+   "staff": 1,
+   "onset": "0",
+   "pitch": "F5",
+   "dur": "1",
+   "uncertain": false
+  },
+  {
+   "measure": 4,
+   "staff": 1,
+   "onset": "1",
+   "pitch": "Eb5",
+   "dur": "1/2",
+   "uncertain": false
+  },
+  {
+   "measure": 4,
+   "staff": 1,
+   "onset": "0",
+   "pitch": "Ab4",
+   "dur": "3/2",
+   "uncertain": false
+  },
+  {
+   "measure": 4,
+   "staff": 2,
+   "onset": "0",
+   "pitch": "C3",
+   "dur": "1/2",
+   "uncertain": false
+  },
+  {
+   "measure": 4,
+   "staff": 2,
+   "onset": "0",
+   "pitch": "C4",
+   "dur": "1/2",
+   "uncertain": false
+  },
+  {
+   "measure": 4,
+   "staff": 2,
+   "onset": "1/2",
+   "pitch": "Eb3",
+   "dur": "1/2",
+   "uncertain": false
+  },
+  {
+   "measure": 4,
+   "staff": 2,
+   "onset": "1/2",
+   "pitch": "Eb4",
+   "dur": "1/2",
+   "uncertain": false
+  },
+  {
+   "measure": 4,
+   "staff": 2,
+   "onset": "1",
+   "pitch": "C3",
+   "dur": "1/2",
+   "uncertain": false
+  },
+  {
+   "measure": 4,
+   "staff": 2,
+   "onset": "1",
+   "pitch": "C4",
+   "dur": "1/2",
+   "uncertain": false
+  },
+  {
+   "measure": 4,
+   "staff": 2,
+   "onset": "3/2",
+   "pitch": "Eb3",
+   "dur": "1/2",
+   "uncertain": false
+  },
+  {
+   "measure": 4,
+   "staff": 2,
+   "onset": "3/2",
+   "pitch": "Eb4",
+   "dur": "1/2",
+   "uncertain": false
+  },
+  {
+   "measure": 4,
+   "staff": 2,
+   "onset": "2",
+   "pitch": "Cb3",
+   "dur": "1/2",
+   "uncertain": false
+  },
+  {
+   "measure": 4,
+   "staff": 2,
+   "onset": "2",
+   "pitch": "Cb4",
+   "dur": "1/2",
+   "uncertain": false
+  },
+  {
+   "measure": 4,
+   "staff": 2,
+   "onset": "5/2",
+   "pitch": "Eb3",
+   "dur": "1/2",
+   "uncertain": false
+  },
+  {
+   "measure": 4,
+   "staff": 2,
+   "onset": "5/2",
+   "pitch": "Eb4",
+   "dur": "1/2",
+   "uncertain": false
+  },
+  {
+   "measure": 5,
+   "staff": 1,
+   "onset": "0",
+   "pitch": "D5",
+   "dur": "3/2",
+   "uncertain": false
+  },
+  {
+   "measure": 5,
+   "staff": 1,
+   "onset": "3/2",
+   "pitch": "Bb4",
+   "dur": "1/6",
+   "uncertain": false
+  },
+  {
+   "measure": 5,
+   "staff": 1,
+   "onset": "5/3",
+   "pitch": "D5",
+   "dur": "1/6",
+   "uncertain": false
+  },
+  {
+   "measure": 5,
+   "staff": 1,
+   "onset": "11/6",
+   "pitch": "F5",
+   "dur": "1/6",
+   "uncertain": false
+  },
+  {
+   "measure": 5,
+   "staff": 1,
+   "onset": "2",
+   "pitch": "Bb5",
+   "dur": "1/6",
+   "uncertain": false
+  },
+  {
+   "measure": 5,
+   "staff": 1,
+   "onset": "13/6",
+   "pitch": "D6",
+   "dur": "1/6",
+   "uncertain": false
+  },
+  {
+   "measure": 5,
+   "staff": 1,
+   "onset": "7/3",
+   "pitch": "F6",
+   "dur": "1/6",
+   "uncertain": false
+  },
+  {
+   "measure": 5,
+   "staff": 1,
+   "onset": "5/2",
+   "pitch": "Ab6",
+   "dur": "1/6",
+   "uncertain": false
+  },
+  {
+   "measure": 5,
+   "staff": 1,
+   "onset": "8/3",
+   "pitch": "G6",
+   "dur": "1/6",
+   "uncertain": false
+  },
+  {
+   "measure": 5,
+   "staff": 1,
+   "onset": "17/6",
+   "pitch": "F6",
+   "dur": "1/6",
+   "uncertain": false
+  },
+  {
+   "measure": 5,
+   "staff": 2,
+   "onset": "0",
+   "pitch": "Bb2",
+   "dur": "1/2",
+   "uncertain": false
+  },
+  {
+   "measure": 5,
+   "staff": 2,
+   "onset": "1/2",
+   "pitch": "Bb3",
+   "dur": "1/4",
+   "uncertain": false
+  },
+  {
+   "measure": 5,
+   "staff": 2,
+   "onset": "1/2",
+   "pitch": "F4",
+   "dur": "1/4",
+   "uncertain": false
+  },
+  {
+   "measure": 5,
+   "staff": 2,
+   "onset": "1/2",
+   "pitch": "Ab4",
+   "dur": "1/4",
+   "uncertain": false
+  },
+  {
+   "measure": 5,
+   "staff": 2,
+   "onset": "3/4",
+   "pitch": "Bb3",
+   "dur": "1/4",
+   "uncertain": false
+  },
+  {
+   "measure": 5,
+   "staff": 2,
+   "onset": "3/4",
+   "pitch": "F4",
+   "dur": "1/4",
+   "uncertain": false
+  },
+  {
+   "measure": 5,
+   "staff": 2,
+   "onset": "3/4",
+   "pitch": "Ab4",
+   "dur": "1/4",
+   "uncertain": false
+  },
+  {
+   "measure": 5,
+   "staff": 2,
+   "onset": "1",
+   "pitch": "Bb3",
+   "dur": "1/2",
+   "uncertain": false
+  },
+  {
+   "measure": 5,
+   "staff": 2,
+   "onset": "1",
+   "pitch": "F4",
+   "dur": "1/2",
+   "uncertain": false
+  },
+  {
+   "measure": 5,
+   "staff": 2,
+   "onset": "1",
+   "pitch": "Ab4",
+   "dur": "1/2",
+   "uncertain": false
+  },
+  {
+   "measure": 5,
+   "staff": 2,
+   "onset": "3/2",
+   "pitch": "Bb3",
+   "dur": "1/2",
+   "uncertain": false
+  },
+  {
+   "measure": 5,
+   "staff": 2,
+   "onset": "3/2",
+   "pitch": "F4",
+   "dur": "1/2",
+   "uncertain": false
+  },
+  {
+   "measure": 5,
+   "staff": 2,
+   "onset": "3/2",
+   "pitch": "Ab4",
+   "dur": "1/2",
+   "uncertain": false
+  },
+  {
+   "measure": 5,
+   "staff": 2,
+   "onset": "2",
+   "pitch": "Bb3",
+   "dur": "1/2",
+   "uncertain": false
+  },
+  {
+   "measure": 5,
+   "staff": 2,
+   "onset": "2",
+   "pitch": "F4",
+   "dur": "1/2",
+   "uncertain": false
+  },
+  {
+   "measure": 5,
+   "staff": 2,
+   "onset": "2",
+   "pitch": "Ab4",
+   "dur": "1/2",
+   "uncertain": false
+  },
+  {
+   "measure": 5,
+   "staff": 2,
+   "onset": "5/2",
+   "pitch": "Bb3",
+   "dur": "1/2",
+   "uncertain": false
+  },
+  {
+   "measure": 5,
+   "staff": 2,
+   "onset": "5/2",
+   "pitch": "F4",
+   "dur": "1/2",
+   "uncertain": false
+  },
+  {
+   "measure": 5,
+   "staff": 2,
+   "onset": "5/2",
+   "pitch": "Ab4",
+   "dur": "1/2",
+   "uncertain": false
+  },
+  {
+   "measure": 6,
+   "staff": 1,
+   "onset": "0",
+   "pitch": "Eb6",
+   "dur": "3/2",
+   "uncertain": false
+  },
+  {
+   "measure": 6,
+   "staff": 1,
+   "onset": "3/2",
+   "pitch": "Eb5",
+   "dur": "1/6",
+   "uncertain": false
+  },
+  {
+   "measure": 6,
+   "staff": 1,
+   "onset": "5/3",
+   "pitch": "G5",
+   "dur": "1/6",
+   "uncertain": false
+  },
+  {
+   "measure": 6,
+   "staff": 1,
+   "onset": "11/6",
+   "pitch": "Bb5",
+   "dur": "1/6",
+   "uncertain": false
+  },
+  {
+   "measure": 6,
+   "staff": 1,
+   "onset": "2",
+   "pitch": "Eb6",
+   "dur": "1/6",
+   "uncertain": false
+  },
+  {
+   "measure": 6,
+   "staff": 1,
+   "onset": "13/6",
+   "pitch": "G6",
+   "dur": "1/6",
+   "uncertain": false
+  },
+  {
+   "measure": 6,
+   "staff": 1,
+   "onset": "7/3",
+   "pitch": "Bb6",
+   "dur": "1/6",
+   "uncertain": false
+  },
+  {
+   "measure": 6,
+   "staff": 1,
+   "onset": "5/2",
+   "pitch": "Eb7",
+   "dur": "1/6",
+   "uncertain": true
+  },
+  {
+   "measure": 6,
+   "staff": 1,
+   "onset": "8/3",
+   "pitch": "D7",
+   "dur": "1/6",
+   "uncertain": true
+  },
+  {
+   "measure": 6,
+   "staff": 1,
+   "onset": "17/6",
+   "pitch": "C7",
+   "dur": "1/6",
+   "uncertain": true
+  },
+  {
+   "measure": 6,
+   "staff": 2,
+   "onset": "0",
+   "pitch": "Eb3",
+   "dur": "1/2",
+   "uncertain": false
+  },
+  {
+   "measure": 6,
+   "staff": 2,
+   "onset": "1/2",
+   "pitch": "Bb4",
+   "dur": "1/4",
+   "uncertain": false
+  },
+  {
+   "measure": 6,
+   "staff": 2,
+   "onset": "1/2",
+   "pitch": "Eb5",
+   "dur": "1/4",
+   "uncertain": false
+  },
+  {
+   "measure": 6,
+   "staff": 2,
+   "onset": "1/2",
+   "pitch": "G5",
+   "dur": "1/4",
+   "uncertain": false
+  },
+  {
+   "measure": 6,
+   "staff": 2,
+   "onset": "3/4",
+   "pitch": "Bb4",
+   "dur": "1/4",
+   "uncertain": false
+  },
+  {
+   "measure": 6,
+   "staff": 2,
+   "onset": "3/4",
+   "pitch": "Eb5",
+   "dur": "1/4",
+   "uncertain": false
+  },
+  {
+   "measure": 6,
+   "staff": 2,
+   "onset": "3/4",
+   "pitch": "G5",
+   "dur": "1/4",
+   "uncertain": false
+  },
+  {
+   "measure": 6,
+   "staff": 2,
+   "onset": "1",
+   "pitch": "Bb4",
+   "dur": "1/2",
+   "uncertain": false
+  },
+  {
+   "measure": 6,
+   "staff": 2,
+   "onset": "1",
+   "pitch": "Eb5",
+   "dur": "1/2",
+   "uncertain": false
+  },
+  {
+   "measure": 6,
+   "staff": 2,
+   "onset": "1",
+   "pitch": "G5",
+   "dur": "1/2",
+   "uncertain": false
+  },
+  {
+   "measure": 6,
+   "staff": 2,
+   "onset": "3/2",
+   "pitch": "Bb4",
+   "dur": "1/2",
+   "uncertain": false
+  },
+  {
+   "measure": 6,
+   "staff": 2,
+   "onset": "3/2",
+   "pitch": "Eb5",
+   "dur": "1/2",
+   "uncertain": false
+  },
+  {
+   "measure": 6,
+   "staff": 2,
+   "onset": "3/2",
+   "pitch": "G5",
+   "dur": "1/2",
+   "uncertain": false
+  },
+  {
+   "measure": 6,
+   "staff": 2,
+   "onset": "2",
+   "pitch": "Bb4",
+   "dur": "1/2",
+   "uncertain": false
+  },
+  {
+   "measure": 6,
+   "staff": 2,
+   "onset": "2",
+   "pitch": "Eb5",
+   "dur": "1/2",
+   "uncertain": false
+  },
+  {
+   "measure": 6,
+   "staff": 2,
+   "onset": "2",
+   "pitch": "G5",
+   "dur": "1/2",
+   "uncertain": false
+  },
+  {
+   "measure": 6,
+   "staff": 2,
+   "onset": "5/2",
+   "pitch": "Bb4",
+   "dur": "1/2",
+   "uncertain": false
+  },
+  {
+   "measure": 6,
+   "staff": 2,
+   "onset": "5/2",
+   "pitch": "Eb5",
+   "dur": "1/2",
+   "uncertain": false
+  },
+  {
+   "measure": 6,
+   "staff": 2,
+   "onset": "5/2",
+   "pitch": "G5",
+   "dur": "1/2",
+   "uncertain": false
+  }
+ ]
+}

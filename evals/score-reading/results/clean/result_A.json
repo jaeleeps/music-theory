@@ -1,0 +1,193 @@
+{
+ "clefs": [
+  "treble"
+ ],
+ "key": "1 sharp",
+ "time": "4/2",
+ "notes": [
+  {
+   "measure": 1,
+   "staff": 1,
+   "onset": "0",
+   "pitch": "Bb4",
+   "dur": "2",
+   "uncertain": false
+  },
+  {
+   "measure": 1,
+   "staff": 1,
+   "onset": "2",
+   "pitch": "Bb4",
+   "dur": "2",
+   "uncertain": false
+  },
+  {
+   "measure": 1,
+   "staff": 1,
+   "onset": "4",
+   "pitch": "C5",
+   "dur": "2",
+   "uncertain": false
+  },
+  {
+   "measure": 1,
+   "staff": 1,
+   "onset": "6",
+   "pitch": "C5",
+   "dur": "2",
+   "uncertain": false
+  },
+  {
+   "measure": 2,
+   "staff": 1,
+   "onset": "0",
+   "pitch": "D5",
+   "dur": "4",
+   "uncertain": false
+  },
+  {
+   "measure": 2,
+   "staff": 1,
+   "onset": "4",
+   "pitch": "D5",
+   "dur": "4",
+   "uncertain": false
+  },
+  {
+   "measure": 3,
+   "staff": 1,
+   "onset": "2",
+   "pitch": "D5",
+   "dur": "4",
+   "uncertain": false
+  },
+  {
+   "measure": 3,
+   "staff": 1,
+   "onset": "6",
+   "pitch": "D5",
+   "dur": "2",
+   "uncertain": false
+  },
+  {
+   "measure": 4,
+   "staff": 1,
+   "onset": "0",
+   "pitch": "D5",
+   "dur": "2",
+   "uncertain": false
+  },
+  {
+   "measure": 4,
+   "staff": 1,
+   "onset": "2",
+   "pitch": "E5",
+   "dur": "2",
+   "uncertain": false
+  },
+  {
+   "measure": 4,
+   "staff": 1,
+   "onset": "4",
+   "pitch": "F5",
+   "dur": "2",
+   "uncertain": false
+  },
+  {
+   "measure": 4,
+   "staff": 1,
+   "onset": "6",
+   "pitch": "D5",
+   "dur": "2",
+   "uncertain": false
+  },
+  {
+   "measure": 5,
+   "staff": 1,
+   "onset": "0",
+   "pitch": "D5",
+   "dur": "4",
+   "uncertain": false
+  },
+  {
+   "measure": 5,
+   "staff": 1,
+   "onset": "6",
+   "pitch": "D5",
+   "dur": "2",
+   "uncertain": false
+  },
+  {
+   "measure": 6,
+   "staff": 1,
+   "onset": "0",
+   "pitch": "D5",
+   "dur": "2",
+   "uncertain": false
+  },
+  {
+   "measure": 6,
+   "staff": 1,
+   "onset": "2",
+   "pitch": "E5",
+   "dur": "2",
+   "uncertain": false
+  },
+  {
+   "measure": 6,
+   "staff": 1,
+   "onset": "4",
+   "pitch": "F5",
+   "dur": "2",
+   "uncertain": false
+  },
+  {
+   "measure": 6,
+   "staff": 1,
+   "onset": "6",
+   "pitch": "D5",
+   "dur": "2",
+   "uncertain": false
+  },
+  {
+   "measure": 7,
+   "staff": 1,
+   "onset": "0",
+   "pitch": "Eb5",
+   "dur": "4",
+   "uncertain": false
+  },
+  {
+   "measure": 7,
+   "staff": 1,
+   "onset": "4",
+   "pitch": "D5",
+   "dur": "4",
+   "uncertain": false
+  },
+  {
+   "measure": 8,
+   "staff": 1,
+   "onset": "2",
+   "pitch": "D5",
+   "dur": "2",
+   "uncertain": false
+  },
+  {
+   "measure": 8,
+   "staff": 1,
+   "onset": "4",
+   "pitch": "C5",
+   "dur": "2",
+   "uncertain": false
+  },
+  {
+   "measure": 8,
+   "staff": 1,
+   "onset": "6",
+   "pitch": "Bb4",
+   "dur": "2",
+   "uncertain": false
+  }
+ ]
+}
