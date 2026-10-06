@@ -1,0 +1,21 @@
+name: Attach skill zip to release
+
+on:
+  release:
+    types: [published]
+
+permissions:
+  contents: write
+
+jobs:
+  zip:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build music-theory.zip
+        # claude.ai requires the zip to contain the skill folder, named like the skill.
+        run: cd skills && zip -r ../music-theory.zip music-theory -x '*.DS_Store'
+      - name: Upload to the release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh release upload "${{ github.event.release.tag_name }}" music-theory.zip --clobber
