@@ -44,13 +44,14 @@ In claude.ai, examples appear as an artifact with the staves and a Play button. 
   - `references/abc-notation.md`: ABC syntax as abcjs renders it, the octave rules, grand staff and SATB layout, and a pre-render checklist.
   - `references/theory.md`: labeling conventions, part-writing and counterpoint checklists, and the analysis procedure.
   - `references/pedagogy.md`: piano pedagogy methods, learning theory, lesson planning, practice, and leveling.
+  - `references/sources.md`: vetted real references (open textbooks, notation guides, pedagogy, scores), so the skill never invents citations.
   - `assets/score.html`: the page template that draws and plays the examples.
 - `.claude-plugin/`: the Claude Code plugin and marketplace manifests.
 - `PRIVACY.md`: privacy policy.
 
 ## Renderer
 
-The notation format (ABC) and the renderer (abcjs, loaded in `assets/score.html`) are kept separate, so the renderer can be replaced without rewriting the skill. abcjs 6.7.1 does not support pedal marks or ottava lines. The skill uses text annotations for those instead.
+The notation format (ABC) and the renderer (abcjs, loaded in `assets/score.html`) are kept separate, so the renderer can be replaced without rewriting the skill. abcjs 6.7.1 cannot draw a few symbols: pedal marks, ottava lines, *fp*, inverted turns, two-note tremolos, simile signs, and dotted barlines. Some of these fail without any warning. `references/abc-notation.md` lists each one and the text workaround the skill uses instead.
 
 ## License
 
