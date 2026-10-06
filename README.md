@@ -11,7 +11,12 @@ An [Agent Skill](https://agentskills.io) that works as a study partner for **mus
 
 ## Install
 
-**claude.ai (web, desktop, mobile)**: download `music-theory.zip` from the [latest release](https://github.com/jaeleeps/music-theory/releases), or zip the `skills/music-theory/` folder yourself (the zip must contain the `music-theory/` folder). Then go to **Settings → Capabilities → Skills**, upload the zip, and turn it on. Code execution needs to be enabled for skills to work.
+**claude.ai (web, desktop, mobile)**: no terminal needed.
+1. Turn on **Code execution and file creation** in [Settings → Capabilities](https://claude.ai/settings/capabilities).
+2. Download `music-theory.zip` from the [latest release](https://github.com/jaeleeps/music-theory/releases/latest).
+3. In [Customize → Skills](https://claude.ai/customize/skills), click **+** → **+ Create skill** → **Upload a skill**, choose the zip, and turn the skill on.
+
+See the [claude.ai guide](docs/claude-ai.md) for Team and Enterprise plans, example prompts, building the zip yourself, updating to a new version, and troubleshooting.
 
 **Any agent (Claude Code, Codex, Gemini CLI, Cursor, GitHub Copilot, OpenCode, …)**, using the [`skills`](https://github.com/vercel-labs/skills) installer:
 
@@ -47,6 +52,8 @@ In claude.ai, examples appear as an artifact with the staves and a Play button. 
   - `references/sources.md`: vetted real references (open textbooks, notation guides, pedagogy, scores), so the skill never invents citations.
   - `assets/score.html`: the page template that draws and plays the examples.
 - `.claude-plugin/`: the Claude Code plugin and marketplace manifests.
+- `docs/claude-ai.md`: a step-by-step guide to using the skill in claude.ai.
+- `.github/workflows/release.yml`: builds `music-theory.zip` and attaches it to each GitHub release.
 - `PRIVACY.md`: privacy policy.
 
 ## Renderer
