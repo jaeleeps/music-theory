@@ -2,7 +2,7 @@
   "$schema": "https://anthropic.com/claude-code/plugin.schema.json",
   "name": "music-theory",
   "displayName": "Music Theory",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Study partner for music theory, analysis, and piano pedagogy, with examples drawn on real staves (grand staff, SATB) that you can play back.",
   "author": {
     "name": "Jaeyoung Lee",
