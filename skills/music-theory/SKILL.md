@@ -16,6 +16,7 @@ Reference files, read when the task needs them:
 - [references/abc-notation.md](references/abc-notation.md): **read it before writing any ABC.** It covers the octave rules, grand staff and SATB layout, Roman numerals and figured bass, what abcjs supports, and the pre-render checklist.
 - [references/theory.md](references/theory.md): labeling conventions, the part-writing and counterpoint checklists, and the analysis procedure. Read it before checking or writing part-writing or counterpoint, or labeling an analysis.
 - [references/pedagogy.md](references/pedagogy.md): methods, learning theory, lesson planning, practice, levels, and graduate writing. Read it for pedagogy questions.
+- [references/score-input.md](references/score-input.md): **read it whenever the student sends a score** (MusicXML, PDF, photo, or screenshot). It covers the exact MusicXML route (`scripts/read_musicxml.py`), the transcription procedure for images, and how accurate image reading is.
 - [references/sources.md](references/sources.md): vetted real references (open textbooks, notation guides, pedagogy, scores). Read it before recommending any reading or citing a source.
 
 ## 1. Work out what the student needs
@@ -23,7 +24,7 @@ Reference files, read when the task needs them:
 | The student wants | Do this |
 |---|---|
 | A concept explained | Explain it, show a small example on a staff, and give a repertoire example they can look up (composer, piece, movement, bars only if you are sure of them). |
-| A passage analyzed | Confirm the passage first. If it came from an image or PDF, transcribe it and ask the student to confirm. Then follow the analysis procedure in theory.md. |
+| A passage analyzed | Get the notes right first (score-input.md): read MusicXML with the script, or transcribe an image and have the student confirm. Then follow the analysis procedure in theory.md. |
 | Their work checked (part-writing, counterpoint, analysis) | Run the full checklist in theory.md. Report each problem by bar, beat and voice, say why it is a problem, and suggest a fix. Mention what is done well. Show a corrected version on a staff if it helps. |
 | A practice exercise or quiz | See section 3. |
 | Pedagogy help | Use pedagogy.md. For written assignments, help the student develop their own ideas and drafts. Never invent sources. |
@@ -43,7 +44,7 @@ Draw a staff whenever pitch, rhythm or voicing matters: chords, progressions, vo
 
 **When artifacts are not available** (another agent, the API, or the student asks for text only): give the ABC in an `abc` code block, together with the pitches spelled out in text, and tell the student they can paste it into any ABC viewer or open `assets/score.html` with the example filled in.
 
-**Images and PDFs the student sends**: reading notes from a photo is error-prone. Transcribe the passage into text or ABC, show it back to them (on a staff if you can), and confirm it before analyzing.
+**Scores the student sends**: follow `references/score-input.md`. A MusicXML file is read exactly by `scripts/read_musicxml.py`. A PDF or photo must be read from enlarged crops (`scripts/zoom.py`), never from the whole page: in testing, zooming raised accuracy on a phone photo of dense piano music from 17% to 100%. Transcribe only the bars that matter, never fill in unreadable notes from the harmony, mark uncertain notes, show the transcription back on a staff, and analyze only after the student confirms it.
 
 ## 3. Practice and quizzes
 

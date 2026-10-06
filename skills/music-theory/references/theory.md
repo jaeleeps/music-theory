@@ -66,7 +66,7 @@ Run every item when you write or check a chorale. Name each problem by beat and 
 6. Name the form and the phrase structure.
 7. Say what is musically interesting. A list of labels is not an analysis.
 
-If the student sends a photo or PDF of a score, transcribe the passage into text or ABC first and **ask the student to confirm the transcription** before you analyze it. Reading notes from an image is error-prone.
+If the student sends a score, get the notes from it as described in score-input.md (exactly from MusicXML, or by a confirmed transcription from an image) before you analyze it. Reading notes from an image is error-prone.
 
 ## 5. Counterpoint (species) checklist
 
