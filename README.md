@@ -21,6 +21,17 @@ An [Agent Skill](https://agentskills.io) that works as a study partner for **mus
 2. Download `music-theory.zip` from the [latest release](https://github.com/jaeleeps/music-theory/releases/latest).
 3. In [Customize → Skills](https://claude.ai/customize/skills), click **+** → **+ Create skill** → **Upload a skill**, choose the zip, and turn the skill on.
 
+<table>
+  <tr>
+    <td><img src="docs/images/claude-ai-upload.png" alt="claude.ai Upload a skill dialog, with a drop zone for the skill file and a security scan that runs on upload" width="420"></td>
+    <td><img src="docs/images/claude-ai-installed.png" alt="The music-theory skill installed in claude.ai, switched on, with its SKILL.md, references, scripts, and assets listed" width="420"></td>
+  </tr>
+  <tr>
+    <td align="center"><sub>Upload the zip</sub></td>
+    <td align="center"><sub>Installed and switched on</sub></td>
+  </tr>
+</table>
+
 See the [claude.ai guide](docs/claude-ai.md) for Team and Enterprise plans, example prompts, building the zip yourself, updating to a new version, and troubleshooting.
 
 **Any agent (Claude Code, Codex, Gemini CLI, Cursor, GitHub Copilot, OpenCode, …)**, using the [`skills`](https://github.com/vercel-labs/skills) installer:
