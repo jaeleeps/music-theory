@@ -1,5 +1,9 @@
 # music-theory
 
+[![Latest release](https://img.shields.io/github/v/release/jaeleeps/music-theory)](https://github.com/jaeleeps/music-theory/releases/latest)
+[![License: MIT](https://img.shields.io/github/license/jaeleeps/music-theory)](LICENSE)
+[![Agent Skill](https://img.shields.io/badge/Agent%20Skill-agentskills.io-blue)](https://agentskills.io)
+
 An [Agent Skill](https://agentskills.io) that works as a study partner for **music theory, analysis, and piano pedagogy** at university and conservatory level, and **draws musical examples on real staves** that you can play back.
 
 - **Theory and analysis**: harmony, Roman numerals and figured bass, voice leading, counterpoint, form. It checks part-writing against a full checklist and reports each problem by bar, beat, and voice.
