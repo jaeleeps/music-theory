@@ -59,10 +59,13 @@ Durations are multiples of `L:`. With `L:1/8`:
 | `C2` | quarter | `C3` | dotted quarter |
 | `C4` | half | `C6` | dotted half |
 | `C8` | whole | `z2` | quarter rest |
+| `C16` | breve (double whole) | `C//` or `C/4` | thirty-second |
+| `C7`, with `L:1/16` | double-dotted quarter | `C/8` | sixty-fourth |
 
 - `>` means the first note is dotted and the second shortened: `c>d` is a dotted eighth plus a sixteenth. `<` is the reverse.
 - Triplet: `(3abc` fits three notes into the time of two.
-- Rests: `z` (with a length, e.g. `z4`). A full-bar rest is `Z`.
+- Rests: `z` (with a length, e.g. `z4`). A full-bar rest is `Z`. A multi-bar rest is `Z4` (drawn as one rest with "4" above it).
+- Meters: `M:C` is common time and `M:C|` is cut time (both draw the C symbols). Change meter mid-piece with an inline field: `[M:3/4]`.
 - **Every bar must add up to the meter.** Count each bar before rendering (see section 10). abcjs does not warn about a bar that is too short or too long.
 
 ## 5. Chords, ties, slurs, beams
@@ -71,7 +74,7 @@ Durations are multiples of `L:`. With `L:1/8`:
 - Tie: `c2-c2`. A tie joins same-pitch notes only.
 - Slur: `(cdef)`.
 - Notes written with no space between them are beamed: `cdef` is one beamed group, `cd ef` is two.
-- Barlines: `|`, final `|]`, double `||`, repeats `|:` and `:|`, first and second endings `|1` and `:|2`.
+- Barlines: `|`, final `|]`, double `||`, repeats `|:` and `:|`, first and second endings `|1` and `:|2`. There is no dotted barline: `.|` is misread as a staccato dot, without a warning.
 
 ## 6. Multiple voices: grand staff and SATB
 
@@ -131,8 +134,21 @@ An annotation is a quoted string placed just before a note. `"_text"` goes below
 | Accent | `!accent!c` |
 | Tenuto | `!tenuto!c` |
 | Fermata | `!fermata!c` |
-| Trill | `!trill!c` |
-| Grace note (acciaccatura) | `{B}c` |
+| Trill | `!trill!c` (or `!tr!c`) |
+| Upper mordent (no line; *Pralltriller*) | `!uppermordent!c` or `!pralltriller!c` |
+| Lower mordent (with line) | `!lowermordent!c` or `!mordent!c` |
+| Turn | `!turn!c` |
+| Staccatissimo (wedge) | `!wedge!c` |
+| Strong marcato (^) | `!^!c` or `!marcato!c` |
+| Arpeggiated chord | `!arpeggio![CEGc]` |
+| Glissando | `!glissando(!C2 !glissando)!c2` (the line runs from the first note to the second) |
+| Tremolo, one note | `!/!c`, `!//!c`, `!///!c` (1–3 slashes on the stem) |
+| Breath mark | `!breath!c` |
+| Segno, coda | `!segno!c`, `!coda!c` |
+| D.C., D.S., Fine | `!D.C.!c`, `!D.S.!c`, `!fine!c`, `!D.C.alfine!c`, `!D.S.alcoda!c` |
+| Softest and loudest | `!ppp!`, `!pppp!`, `!fff!`, `!ffff!` |
+| Appoggiatura (unslashed grace note) | `{B}c`, or several: `{AB}c` |
+| Acciaccatura (slashed grace note) | `{/B}c`, or several: `{/AB}c` |
 
 ## 9. Unsupported in abcjs, and what to do instead
 
@@ -140,8 +156,16 @@ An annotation is a quoted string placed just before a note. `"_text"` goes below
 |---|---|---|
 | Pedal marks | `!ped!`, `!ped-up!` | annotations `"_Ped."` and `"_*"` |
 | Ottava line | `!8va(!` … `!8va)!` | write the real pitches with ledger lines, or the annotation `"^8va"` plus a caption |
+| *fp* | `!fp!` | the annotation `"_fp"` |
+| Inverted turn | `!invertedturn!`, `!turnx!` (**no warning, nothing drawn**) | write the notes out, or a caption |
+| Tremolo between two notes | `!trem1!`–`!trem4!` (**no warning, nothing drawn**) | write the notes out, or a caption ("measured tremolo between C and E") |
+| Simile (repeat-beat or repeat-bar sign) | none | write the music out |
+| Dotted barline | `.\|` (**misread as staccato, no warning**) | a plain `\|` plus a caption |
+| Editorial or courtesy accidental in brackets | `!editorial!`, `!courtesy!` (draw a plain accidental) | a plain accidental, plus a caption noting it is a courtesy accidental |
 
-If the template shows a red "Notation warnings" box, the ABC has an error. Fix it before showing the example to the student.
+If the template shows a red "Notation warnings" box, the ABC has an error. Fix it before showing the example to the student. The rows marked **no warning** fail silently, so the warning box cannot catch them. Never use them.
+
+**Crowding:** text marks on neighboring notes overlap (e.g. `!D.S.!` next to `!D.S.alcoda!`, or a new dynamic on every note). Put at most one text mark on any two consecutive notes, or put the marks on different sides of the staff (`"^…"` and `"_…"`).
 
 ## 10. Pre-render checklist
 
