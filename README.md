@@ -14,6 +14,14 @@ An [Agent Skill](https://agentskills.io) that works as a study partner for **mus
 - **Reading your scores**: MusicXML files (`.musicxml`, `.mxl`) are read exactly, with a standard-library script. PDFs and photos are cut into enlarged crops, read visually, and transcribed for you to confirm. See [the score-reading test](docs/score-reading-test.md) for how accurate that is.
 - **Pedagogy**: method comparisons, learning theory, lesson plans, practice strategies, repertoire levels, and help with graduate written work. It never invents citations.
 
+## See it in action
+
+Ask for an example, and Claude draws it on a staff in a side panel that you can play back:
+
+![claude.ai chat asking the skill to draw Happy Birthday. The artifact panel shows the melody on a treble staff in C major, 3/4, with lyrics under the notes, a Play button, and the pitches spelled out in text below the staff.](docs/images/claude-ai-demo.png)
+
+Harmony examples use the same panel. Here, a four-part chorale with Roman numerals and figured bass:
+
 ![Example: a four-part chorale in B♭ with Roman numerals, and figured bass](assets/example.png)
 
 ## Install
@@ -23,16 +31,9 @@ An [Agent Skill](https://agentskills.io) that works as a study partner for **mus
 2. Download `music-theory.zip` from the [latest release](https://github.com/jaeleeps/music-theory/releases/latest).
 3. In [Customize → Skills](https://claude.ai/customize/skills), click **+** → **+ Create skill** → **Upload a skill**, choose the zip, and turn the skill on.
 
-<table>
-  <tr>
-    <td><img src="docs/images/claude-ai-upload.png" alt="claude.ai Upload a skill dialog, with a drop zone for the skill file and a security scan that runs on upload" width="420"></td>
-    <td><img src="docs/images/claude-ai-installed.png" alt="The music-theory skill installed in claude.ai, switched on, with its SKILL.md, references, scripts, and assets listed" width="420"></td>
-  </tr>
-  <tr>
-    <td align="center"><sub>Upload the zip</sub></td>
-    <td align="center"><sub>Installed and switched on</sub></td>
-  </tr>
-</table>
+![claude.ai Upload a skill dialog, with a drop zone for the skill file and a security scan that runs on upload](docs/images/claude-ai-upload.png)
+
+![The music-theory skill installed in claude.ai, switched on, with its SKILL.md, references, scripts, and assets listed](docs/images/claude-ai-installed.png)
 
 See the [claude.ai guide](docs/claude-ai.md) for Team and Enterprise plans, example prompts, building the zip yourself, updating to a new version, and troubleshooting.
 
@@ -60,6 +61,19 @@ Ask in plain language, for example:
 
 In claude.ai, examples appear as an artifact with the staves and a Play button. A red warning box under a staff means the notation has an error, so tell Claude and it will fix it.
 
+## What it runs and accesses
+
+- **Instructions and references**: Markdown files that Claude reads (`SKILL.md`, `references/`).
+- **Score pages**: when Claude draws an example, it builds an HTML artifact from `assets/score.html`. In your browser, that page loads the open-source abcjs library from `cdnjs.cloudflare.com` to draw the notation, and plays sound with your browser's built-in Web Audio. It sends nothing you type anywhere.
+- **Two helper scripts**, which Claude runs only on a file you give it, in its code-execution sandbox:
+  - `scripts/read_musicxml.py` reads a MusicXML file and prints its notes as text. It uses only Python's standard library.
+  - `scripts/zoom.py` saves enlarged crops of a score image, using Pillow.
+
+  Neither script makes network requests or changes any file except the crops it writes.
+- **No hooks, MCP servers, telemetry, or data collection.** See [PRIVACY.md](PRIVACY.md).
+
+The `evals/` test suite isn't part of normal use. It runs only when a maintainer starts it by hand.
+
 ## Layout
 
 - `skills/music-theory/`: the skill. Installers copy only this folder.
@@ -77,6 +91,7 @@ In claude.ai, examples appear as an artifact with the staves and a Play button. 
 - `docs/claude-ai.md`: a step-by-step guide to using the skill in claude.ai.
 - `.github/workflows/release.yml`: builds `music-theory.zip` and attaches it to each GitHub release.
 - `assets/`: the icon (PNG for listings, SVG source) and the README example image.
+- `docs/images/`: claude.ai screenshots used in the README and the guide.
 - `PRIVACY.md`: privacy policy.
 
 ## Renderer

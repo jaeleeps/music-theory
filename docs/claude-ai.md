@@ -29,11 +29,11 @@ cd skills && zip -r ../music-theory.zip music-theory
 2. Click **+**, then **+ Create skill**, then **Upload a skill**.
 3. Drop `music-theory.zip` onto the box (or click to browse), then click **Upload**. claude.ai runs a security scan on the file.
 
-   <img src="images/claude-ai-upload.png" alt="claude.ai Upload a skill dialog, with a drop zone for the skill file and a security scan that runs on upload" width="600">
+   ![claude.ai Upload a skill dialog, with a drop zone for the skill file and a security scan that runs on upload](images/claude-ai-upload.png)
 
 4. The skill opens on its own page. Make sure the switch at the top right is on. The **Contents** tab lists the skill's files, and **Try in chat** starts a chat with it.
 
-   <img src="images/claude-ai-installed.png" alt="The music-theory skill installed in claude.ai, switched on, with its SKILL.md, references, scripts, and assets listed" width="600">
+   ![The music-theory skill installed in claude.ai, switched on, with its SKILL.md, references, scripts, and assets listed](images/claude-ai-installed.png)
 
 ## 4. Use it
 
