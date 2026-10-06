@@ -12,6 +12,7 @@
   "repository": "https://github.com/jaeleeps/music-theory",
   "license": "MIT",
   "keywords": ["music-theory", "harmony", "piano", "pedagogy", "notation", "abc-notation", "education", "skill"],
+  "icon": "./assets/icon.png",
   "documentationUrl": "https://github.com/jaeleeps/music-theory#readme",
   "supportUrl": "https://github.com/jaeleeps/music-theory/issues",
   "privacyPolicyUrl": "https://github.com/jaeleeps/music-theory/blob/main/PRIVACY.md"

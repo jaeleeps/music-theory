@@ -4,6 +4,8 @@
 [![License: MIT](https://img.shields.io/github/license/jaeleeps/music-theory)](LICENSE)
 [![Agent Skill](https://img.shields.io/badge/Agent%20Skill-agentskills.io-blue)](https://agentskills.io)
 
+![music-theory icon](assets/icon.png)
+
 An [Agent Skill](https://agentskills.io) that works as a study partner for **music theory, analysis, and piano pedagogy** at university and conservatory level, and **draws musical examples on real staves** that you can play back.
 
 - **Theory and analysis**: harmony, Roman numerals and figured bass, voice leading, counterpoint, form. It checks part-writing against a full checklist and reports each problem by bar, beat, and voice.
@@ -63,6 +65,7 @@ In claude.ai, examples appear as an artifact with the staves and a Play button. 
 - `docs/score-reading-test.md` and `evals/score-reading/`: the blind test of reading notation from images, with its scripts, images, answer key, and results.
 - `docs/claude-ai.md`: a step-by-step guide to using the skill in claude.ai.
 - `.github/workflows/release.yml`: builds `music-theory.zip` and attaches it to each GitHub release.
+- `assets/`: the icon (PNG for listings, SVG source) and the README example image.
 - `PRIVACY.md`: privacy policy.
 
 ## Renderer
