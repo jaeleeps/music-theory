@@ -30,8 +30,10 @@
   section.example { margin: 0 0 32px; }
   section.example h2 { font-size: 1.15rem; margin: 0 0 6px; }
   .caption { margin: 0 0 10px; }
-  /* The score always sits on a light "paper" card: abcjs draws in black. */
-  .paper { background: var(--card); border: 1px solid var(--line); border-radius: 8px; padding: 8px; overflow-x: auto; }
+  /* The score always sits on a light "paper" card. abcjs draws with currentColor,
+     so the paper sets its own dark ink; otherwise dark mode's light text color
+     would draw light notes on light paper. */
+  .paper { background: var(--card); color: #1d1b18; border: 1px solid var(--line); border-radius: 8px; padding: 8px; overflow-x: auto; }
   .paper svg { display: block; }
   .controls { margin-top: 8px; display: flex; gap: 8px; align-items: center; }
   button {

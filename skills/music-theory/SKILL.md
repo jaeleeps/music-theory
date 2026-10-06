@@ -4,7 +4,7 @@ description: Study partner for music theory, analysis, and piano pedagogy at uni
 license: MIT (see LICENSE)
 metadata:
   author: jaeleeps
-  version: "0.1.0"
+  version: "0.1.1"
   repository: https://github.com/jaeleeps/music-theory
 ---
 
