@@ -16,6 +16,7 @@ Reference files, read when the task needs them:
 - [references/abc-notation.md](references/abc-notation.md): **read it before writing any ABC.** It covers the octave rules, grand staff and SATB layout, Roman numerals and figured bass, what abcjs supports, and the pre-render checklist.
 - [references/theory.md](references/theory.md): labeling conventions, the part-writing and counterpoint checklists, and the analysis procedure. Read it before checking or writing part-writing or counterpoint, or labeling an analysis.
 - [references/pedagogy.md](references/pedagogy.md): methods, learning theory, lesson planning, practice, levels, and graduate writing. Read it for pedagogy questions.
+- [references/sources.md](references/sources.md): vetted real references (open textbooks, notation guides, pedagogy, scores). Read it before recommending any reading or citing a source.
 
 ## 1. Work out what the student needs
 
