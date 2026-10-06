@@ -1,0 +1,18 @@
+{
+  "$schema": "https://anthropic.com/claude-code/plugin.schema.json",
+  "name": "music-theory",
+  "displayName": "Music Theory",
+  "version": "0.1.0",
+  "description": "Study partner for music theory, analysis, and piano pedagogy, with examples drawn on real staves (grand staff, SATB) that you can play back.",
+  "author": {
+    "name": "Jaeyoung Lee",
+    "url": "https://github.com/jaeleeps"
+  },
+  "homepage": "https://github.com/jaeleeps/music-theory",
+  "repository": "https://github.com/jaeleeps/music-theory",
+  "license": "MIT",
+  "keywords": ["music-theory", "harmony", "piano", "pedagogy", "notation", "abc-notation", "education", "skill"],
+  "documentationUrl": "https://github.com/jaeleeps/music-theory#readme",
+  "supportUrl": "https://github.com/jaeleeps/music-theory/issues",
+  "privacyPolicyUrl": "https://github.com/jaeleeps/music-theory/blob/main/PRIVACY.md"
+}

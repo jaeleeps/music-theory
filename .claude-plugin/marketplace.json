@@ -1,0 +1,19 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "music-theory",
+  "owner": {
+    "name": "Jaeyoung Lee",
+    "url": "https://github.com/jaeleeps"
+  },
+  "metadata": {
+    "description": "Music theory and piano pedagogy study partner for Claude Code."
+  },
+  "plugins": [
+    {
+      "name": "music-theory",
+      "source": "./",
+      "description": "Study music theory, analysis, and piano pedagogy, with examples drawn on real staves.",
+      "category": "education"
+    }
+  ]
+}
