@@ -11,7 +11,7 @@ An [Agent Skill](https://agentskills.io) that works as a study partner for **mus
 - **Theory and analysis**: harmony, Roman numerals and figured bass, voice leading, counterpoint, form. It checks part-writing against a full checklist and reports each problem by bar, beat, and voice.
 - **Staff notation**: examples are written in [ABC notation](https://abcnotation.com) and drawn with [abcjs](https://github.com/paulrosen/abcjs): grand staff, SATB on two staves, Roman numerals, figured bass, fingering, dynamics, and a Play button.
 - **Practice**: quizzes one question at a time, ear training with hidden answers, and returning to the topics you missed.
-- **Reading your scores**: MusicXML files (`.musicxml`, `.mxl`) are read exactly, with a standard-library script. PDFs and photos are cut into enlarged crops, read visually, and transcribed for you to confirm. See [the score-reading test](docs/score-reading-test.md) for how accurate that is.
+- **Reading your scores**: MusicXML files (`.musicxml`, `.mxl`) are read exactly, with a standard-library script. PDFs and photos are cut into enlarged crops, read visually, and transcribed for you to confirm. Phone photos of a page at a slant or in uneven light are straightened and evened out first. `.mtext` plain-text scores are read directly. See [the score-reading test](docs/score-reading-test.md) for how accurate that is.
 - **Pedagogy**: method comparisons, learning theory, lesson plans, practice strategies, repertoire levels, and help with graduate written work. It never invents citations.
 
 ## See it in action
@@ -56,10 +56,13 @@ npx skills add jaeleeps/music-theory -g     # every project (user scope)
 Ask in plain language, for example:
 - *"Explain the Neapolitan sixth and show me how it resolves in C minor."*
 - *"Check my part-writing:"* followed by your chorale in text or a photo of it.
+- *"Analyze bars 9–16 of this."* with a MusicXML file, an `.mtext` file, a PDF, or a phone photo of the page attached.
 - *"Quiz me on seventh-chord inversions, one at a time."*
 - *"Compare the reading approaches of Faber Piano Adventures and The Music Tree."*
 
 In claude.ai, examples appear as an artifact with the staves and a Play button. A red warning box under a staff means the notation has an error, so tell Claude and it will fix it.
+
+**Sending a score.** MusicXML and `.mtext` files are read exactly. For a PDF or a photo, Claude straightens the page (a phone shot at a slant is fine), reads enlarged crops, and shows its transcription on a staff for you to confirm before analyzing. It marks notes it isn't sure of instead of guessing them. See [Send a score](docs/claude-ai.md#5-send-a-score) for photo tips and what to expect.
 
 ## What it runs and accesses
 
@@ -67,9 +70,9 @@ In claude.ai, examples appear as an artifact with the staves and a Play button. 
 - **Score pages**: when Claude draws an example, it builds an HTML artifact from `assets/score.html`. In your browser, that page loads the open-source abcjs library from `cdnjs.cloudflare.com` to draw the notation, and plays sound with your browser's built-in Web Audio. It sends nothing you type anywhere.
 - **Two helper scripts**, which Claude runs only on a file you give it, in its code-execution sandbox:
   - `scripts/read_musicxml.py` reads a MusicXML file and prints its notes as text. It uses only Python's standard library.
-  - `scripts/zoom.py` saves enlarged crops of a score image, using Pillow.
+  - `scripts/zoom.py` saves enlarged crops of a score image, after optionally straightening the page and evening out the light. It uses Pillow, and numpy when present.
 
-  Neither script makes network requests or changes any file except the crops it writes.
+  Neither script makes network requests or changes any file except the crops and cleaned page it writes.
 - **No hooks, MCP servers, telemetry, or data collection.** See [PRIVACY.md](PRIVACY.md).
 
 The `evals/` test suite isn't part of normal use. It runs only when a maintainer starts it by hand.
@@ -84,8 +87,9 @@ The `evals/` test suite isn't part of normal use. It runs only when a maintainer
   - `references/sources.md`: vetted real references (open textbooks, notation guides, pedagogy, scores), so the skill never invents citations.
   - `assets/score.html`: the page template that draws and plays the examples.
   - `scripts/read_musicxml.py`: prints the notes of a MusicXML score as text (standard library only).
-  - `scripts/zoom.py`: cuts a score photo or page into enlarged crops for reading (Pillow).
-  - `references/score-input.md`: how to read scores the student sends (MusicXML, PDF, photo), including the transcription procedure.
+  - `scripts/zoom.py`: straightens and evens out a score photo, then cuts it into enlarged crops for reading (Pillow).
+  - `references/score-input.md`: how to read scores the student sends (MusicXML, `.mtext`, PDF, photo), including the transcription procedure.
+  - `references/mtext.md`: the `.mtext` plain-text score format, and how to draw it as ABC.
 - `.claude-plugin/`: the Claude Code plugin and marketplace manifests.
 - `docs/score-reading-test.md` and `evals/score-reading/`: the blind test of reading notation from images, with its scripts, images, answer key, and results.
 - `docs/claude-ai.md`: a step-by-step guide to using the skill in claude.ai.
