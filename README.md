@@ -56,10 +56,13 @@ npx skills add jaeleeps/music-theory -g     # every project (user scope)
 Ask in plain language, for example:
 - *"Explain the Neapolitan sixth and show me how it resolves in C minor."*
 - *"Check my part-writing:"* followed by your chorale in text or a photo of it.
+- *"Analyze bars 9–16 of this."* with a MusicXML file, an `.mtext` file, a PDF, or a phone photo of the page attached.
 - *"Quiz me on seventh-chord inversions, one at a time."*
 - *"Compare the reading approaches of Faber Piano Adventures and The Music Tree."*
 
 In claude.ai, examples appear as an artifact with the staves and a Play button. A red warning box under a staff means the notation has an error, so tell Claude and it will fix it.
+
+**Sending a score.** MusicXML and `.mtext` files are read exactly. For a PDF or a photo, Claude straightens the page (a phone shot at a slant is fine), reads enlarged crops, and shows its transcription on a staff for you to confirm before analyzing. It marks notes it isn't sure of instead of guessing them. See [Send a score](docs/claude-ai.md#5-send-a-score) for photo tips and what to expect.
 
 ## What it runs and accesses
 

@@ -43,6 +43,7 @@ Start a new chat and ask normally. Claude loads the skill on its own when the qu
 - *"Quiz me on seventh-chord inversions, one question at a time."*
 - *"Check my part-writing."* Attach a photo of your chorale, or type the notes (e.g. "S: E5 D5 C5, A: G4 G4 E4 …").
 - *"Compare the reading approaches of Piano Adventures and The Music Tree."*
+- *"Analyze bars 1–8 of this."* Attach a MusicXML file, an `.mtext` file, a PDF, or a phone photo of the page (see section 5).
 
 **What you'll see**
 - Musical examples open in a panel next to the chat (an *artifact*), drawn on real staves.
@@ -52,8 +53,36 @@ Start a new chat and ask normally. Claude loads the skill on its own when the qu
 
 **Tips**
 - Tell Claude which textbook your course uses (e.g. Aldwell & Schachter, Kostka & Payne, Laitz). Labeling conventions differ between textbooks, and Claude will follow yours.
-- For photos of scores: Claude transcribes the passage and asks you to confirm it before analyzing, because reading notes from a photo is error-prone.
 - For ear training, ask Claude to hide the answer. It will draw the example without labels, and you press Play.
+
+## 5. Send a score
+
+Attach the file to your message and say which bars you want to work on. Claude reads only those bars, so there are fewer chances for mistakes.
+
+| What you send | How Claude reads it | How accurate |
+|---|---|---|
+| **MusicXML** (`.musicxml`, `.xml`, `.mxl`) | Reads every note from the file with a script. | Exact. The best choice for long or graded work. |
+| **`.mtext`** (plain-text score) | Reads the text directly. | Exact. If the file came from a scan, check the bars that matter. If claude.ai won't attach the file, paste its text into the message instead. |
+| **PDF or screenshot** | Cuts the page into enlarged crops and reads them by eye. | Very good on clean engraving (96–100% of notes in testing). |
+| **Phone photo** | Straightens the page, evens out shadows if needed, then reads enlarged crops. | Good (92–100% in testing), but always check it. |
+
+**Getting MusicXML.** Any notation program can export it: in MuseScore, Finale, Sibelius, or Dorico, use **File → Export → MusicXML**. Many scores on IMSLP and MuseScore.com have a MusicXML version you can download.
+
+**Taking a good photo**
+- Get the whole page, or the system you want, inside the frame. Claude finds the page's four corners, so a slight slant or some table showing is fine.
+- Lay the page flat. A curled page bends the staff lines.
+- Use even light. Avoid your own shadow across the music and glare on glossy paper.
+- For dense piano music or small print, take a close photo of one system (one line of music) at a time. If the staff lines are too small, Claude will say so and ask for a closer photo, because enlarging can't recover detail the photo doesn't have.
+
+**What happens next**
+1. Claude names the clefs, key, and meter it sees, and asks which bars matter if you didn't say.
+2. It transcribes those bars, marks any note it isn't sure of with `?`, and writes `??` for a note it can't read. It never guesses a note from what the harmony "should" be.
+3. It draws its transcription on a staff, with the notes also written out in text, and lists the uncertain notes.
+4. **You compare it with your score bar by bar** and correct anything wrong. Claude analyzes only after you confirm.
+
+Notes marked uncertain are wrong much more often than the rest, so check those first. The [score-reading test](score-reading-test.md) has the details.
+
+**Asking for `.mtext`.** Claude can also write a passage as `.mtext`, for example to paste into a notation app that reads the format: *"Write this chorale as .mtext."*
 
 ## Updating to a new version
 
@@ -67,5 +96,7 @@ Open [Customize → Skills](https://claude.ai/customize/skills), turn **music-th
 | Claude doesn't seem to use the skill | Check that the skill's switch is on and code execution is enabled (step 1). Or ask directly: *"Use the music-theory skill to …"*. |
 | The staff panel shows the ABC text instead of notes | The notation library couldn't load. Reload the page. If it keeps happening, ask Claude for the ABC text and paste it into any ABC viewer. |
 | No sound | Click **▶ Play** again (browsers only allow sound after you click), and check that your device isn't muted. |
+| Claude says the photo's staff lines are too small, or can't find them | Take a closer photo of one system at a time, flat and in even light. Or send a MusicXML file instead. |
+| The transcription of a photo has wrong notes | Correct them in the chat ("bar 3, beat 2 in the left hand is E♭, not F"), and Claude updates the staff before analyzing. |
 
 Help Center reference: [Using Skills in Claude](https://support.claude.com/en/articles/12512180-using-skills-in-claude).
