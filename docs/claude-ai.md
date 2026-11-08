@@ -64,7 +64,7 @@ Attach the file to your message and say which bars you want to work on. Claude r
 | **MusicXML** (`.musicxml`, `.xml`, `.mxl`) | Reads every note from the file with a script. | Exact. The best choice for long or graded work. |
 | **`.mtext`** (plain-text score) | Reads the text directly. | Exact. If the file came from a scan, check the bars that matter. If claude.ai won't attach the file, paste its text into the message instead. |
 | **PDF or screenshot** | Cuts the page into enlarged crops and reads them by eye. | Very good on clean engraving (96–100% of notes in testing). |
-| **Phone photo** | Straightens the page, evens out shadows if needed, then reads enlarged crops. | Good (92–100% in testing), but always check it. |
+| **Phone photo** | Straightens the page, evens out shadows if needed, then reads enlarged crops. | Very good on a clear photo (96–100% of notes with the current version in testing), but always check it. |
 
 **Getting MusicXML.** Any notation program can export it: in MuseScore, Finale, Sibelius, or Dorico, use **File → Export → MusicXML**. Many scores on IMSLP and MuseScore.com have a MusicXML version you can download.
 
