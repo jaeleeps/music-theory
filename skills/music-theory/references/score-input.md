@@ -65,7 +65,7 @@ A blind test (2026-10) had Claude transcribe clean engraved excerpts from images
 | Clean engraving (like a good PDF) | zoom allowed | 96–100% each |
 | Phone-photo quality (small, tilted, blurred) | whole image, no zoom | 91%, 80%, **17%**, **58%** |
 | The same phone photos (piano excerpts) | zoomed crops | **100%** and **98%** |
-| Phone shots of the page on a table: slanted, bent, shaded, noisy (2026-11) | straightened with `--corners`, then zoomed | 96%, 100%, 92%, 100% |
+| Phone shots of the page on a table: slanted, bent, shaded, noisy (2026-11) | straightened with `--corners`, then zoomed | 96%, 100%, 92%, 100% (C re-run with the revised script: 100%) |
 
 - **Zooming is what makes image reading work.** Without it, dense piano writing on a photo was mostly wrong. With enlarged crops of the same photo, it was nearly perfect.
 - Without zoom, the readers filled in notes they couldn't see from the "likely harmony". That is why step 6 forbids it.
