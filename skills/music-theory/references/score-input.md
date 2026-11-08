@@ -5,6 +5,7 @@ There are two routes, and they differ a lot in reliability:
 | The student sends | Route | Reliability |
 |---|---|---|
 | A MusicXML file (`.musicxml`, `.xml`, `.mxl`) | Run `scripts/read_musicxml.py`. | **Exact.** Every pitch and rhythm comes from the file itself. |
+| An `.mtext` file | Read the text directly, following [mtext.md](mtext.md). | **Exact**, like MusicXML. If its metadata says `source: omr`, it came from a scan, so have the student confirm the bars that matter. |
 | A PDF, photo, or screenshot of a score | Zoom with `scripts/zoom.py`, then read the crops visually using the transcription procedure below. | **Good when zoomed, poor when not.** See "Accuracy" below. Always have the student confirm. |
 
 When a passage is long, dense, or important (graded analysis, a lecture-recital), ask whether they have, or can get, a MusicXML version. Many scores on IMSLP and MuseScore.com have one, and any notation program can export one (Finale, Sibelius, Dorico, MuseScore: **File → Export → MusicXML**). Optical music recognition apps (e.g. Audiveris, which is free, or PlayScore) can also convert a clean PDF to MusicXML. Their output has errors too, but the student can correct it in a notation program before sending it.
@@ -39,6 +40,13 @@ The path is relative to this skill's folder. Uploaded files are wherever the env
    python3 scripts/zoom.py page.jpg --out crops/ --box 0.5,0,1,0.4   # re-check one region closely
    ```
    For a PDF, first turn the page into an image (e.g. `pdftoppm -r 200 -png score.pdf page`, or Python's `pypdfium2` if it is available). Look at each crop with your image-viewing tool. If a crop is still too small to read with confidence, crop tighter with `--box`. If there is no Python sandbox, ask the student for close-up photos of one system at a time.
+
+   **Phone photos: clean the page first.** If the page is at a slant, on a table, or unevenly lit, look at the photo, estimate its four corners as fractions of the picture (top left, top right, bottom right, bottom left), and straighten it. Add `--flatten` only for real shadows or uneven light. It also strengthens paper grain, so if the flattened crops look noisier, make the close-ups without it:
+   ```bash
+   python3 scripts/zoom.py photo.jpg --out crops/ --corners 0.15,0.18 0.86,0.20 0.92,0.82 0.08,0.79 --flatten
+   python3 scripts/zoom.py crops/page.png --out crops/ --box 0,0,0.5,0.5   # later crops: start from the cleaned page
+   ```
+   Look at `crops/page.png` to check that the whole page is inside the corners and the staff lines run straight. Every run prints the **staff spacing** (the distance between two staff lines) and enlarges the crops to make it about 40 px. If it warns that the spacing is too small, or finds no staff lines even after straightening, ask for a closer photo of one system at a time. Enlarging can't recover detail the photo doesn't have.
 4. **Work in small chunks**: 2–4 bars at a time, staff by staff. For each note, decide the line or space, then apply the clef, then the key signature, then any accidental earlier in the same bar.
 5. **Count every bar** against the meter. A bar that doesn't add up has a rhythm error.
 6. **Mark what you are unsure of**, with a `?` in the text (e.g. `E5?`), instead of guessing silently. Pay most attention to ledger-line notes, accidentals in dense chords, inner and bass voices, and tuplets.
@@ -57,6 +65,7 @@ A blind test (2026-10) had Claude transcribe clean engraved excerpts from images
 | Clean engraving (like a good PDF) | zoom allowed | 96–100% each |
 | Phone-photo quality (small, tilted, blurred) | whole image, no zoom | 91%, 80%, **17%**, **58%** |
 | The same phone photos (piano excerpts) | zoomed crops | **100%** and **98%** |
+| Phone shots of the page on a table: slanted, bent, shaded, noisy (2026-11) | straightened with `--corners`, then zoomed | 96%, 100%, 92%, 100% |
 
 - **Zooming is what makes image reading work.** Without it, dense piano writing on a photo was mostly wrong. With enlarged crops of the same photo, it was nearly perfect.
 - Without zoom, the readers filled in notes they couldn't see from the "likely harmony". That is why step 6 forbids it.

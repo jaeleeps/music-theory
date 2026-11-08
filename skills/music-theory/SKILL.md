@@ -4,7 +4,7 @@ description: Study partner for music theory, analysis, and piano pedagogy at uni
 license: MIT (see LICENSE)
 metadata:
   author: jaeleeps
-  version: "0.1.1"
+  version: "0.2.0"
   repository: https://github.com/jaeleeps/music-theory
 ---
 
@@ -17,6 +17,7 @@ Reference files, read when the task needs them:
 - [references/theory.md](references/theory.md): labeling conventions, the part-writing and counterpoint checklists, and the analysis procedure. Read it before checking or writing part-writing or counterpoint, or labeling an analysis.
 - [references/pedagogy.md](references/pedagogy.md): methods, learning theory, lesson planning, practice, levels, and graduate writing. Read it for pedagogy questions.
 - [references/score-input.md](references/score-input.md): **read it whenever the student sends a score** (MusicXML, PDF, photo, or screenshot). It covers the exact MusicXML route (`scripts/read_musicxml.py`), the transcription procedure for images, and how accurate image reading is.
+- [references/mtext.md](references/mtext.md): the `.mtext` plain-text score format. Read it when the student sends or asks for an `.mtext` file, or pastes lines like `piano 1.1 | C4/4 D4 E4 F4 |`.
 - [references/sources.md](references/sources.md): vetted real references (open textbooks, notation guides, pedagogy, scores). Read it before recommending any reading or citing a source.
 
 ## 1. Work out what the student needs
@@ -44,7 +45,7 @@ Draw a staff whenever pitch, rhythm or voicing matters: chords, progressions, vo
 
 **When artifacts are not available** (another agent, the API, or the student asks for text only): give the ABC in an `abc` code block, together with the pitches spelled out in text, and tell the student they can paste it into any ABC viewer or open `assets/score.html` with the example filled in.
 
-**Scores the student sends**: follow `references/score-input.md`. A MusicXML file is read exactly by `scripts/read_musicxml.py`. A PDF or photo must be read from enlarged crops (`scripts/zoom.py`), never from the whole page: in testing, zooming raised accuracy on a phone photo of dense piano music from 17% to 100%. Transcribe only the bars that matter, never fill in unreadable notes from the harmony, mark uncertain notes, show the transcription back on a staff, and analyze only after the student confirms it.
+**Scores the student sends**: follow `references/score-input.md`. A MusicXML file is read exactly by `scripts/read_musicxml.py`. A PDF or photo must be read from enlarged crops (`scripts/zoom.py`), never from the whole page, and a phone photo of a page at a slant is straightened first (`--corners`): in testing, zooming raised accuracy on a phone photo of dense piano music from 17% to 100%. Transcribe only the bars that matter, never fill in unreadable notes from the harmony, mark uncertain notes, show the transcription back on a staff, and analyze only after the student confirms it.
 
 ## 3. Practice and quizzes
 
